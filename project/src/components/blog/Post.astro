@@ -1,0 +1,6 @@
+---
+const { title, desc, url } = Astro.props;
+
+console.log(`Post: title=${title} url=${url}`);
+---
+<li><a class="link" href={url}>{title} ({desc})</a></li>
